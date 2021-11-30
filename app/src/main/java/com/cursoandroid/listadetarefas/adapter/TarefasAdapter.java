@@ -41,12 +41,15 @@ public class TarefasAdapter extends RecyclerView.Adapter<TarefasHolder> {
     @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onBindViewHolder(@NonNull TarefasHolder holder, int position) {
-        //Pega a atrefa na posição atual
+        //Pega a tarefa na posição atual
         Tarefa tarefa = listaTarefas.get(position);
 
         try {
-            //Se a tarefa já foi concluída, muda a cor de fundo
+            //Se a tarefa já foi concluída, muda a cor de fundo e a imagem do botão
             if(tarefa.getFgFinalizada().equals("S")) {
+                holder.btnEditar.setImageResource(R.drawable.ic_baseline_done_outline_24);
+                holder.btnEditar.setEnabled(false);
+                holder.btnApagar.setVisibility(View.GONE);
                 holder.itemView.setBackgroundColor(context.getResources().getColor(R.color.fg_finalizada));
             }
 

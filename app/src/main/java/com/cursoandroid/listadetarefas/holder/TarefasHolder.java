@@ -21,7 +21,7 @@ public class TarefasHolder extends RecyclerView.ViewHolder {
     public TarefasHolder(@NonNull View itemView) {
         super(itemView);
         tituloTarefa = itemView.findViewById(R.id.textView);
-        btnApagar = itemView.findViewById(R.id.imageButton);
-        btnEditar = itemView.findViewById(R.id.imageButton2);
+        btnApagar = itemView.findViewById(R.id.btnImagem2);
+        btnEditar = itemView.findViewById(R.id.btnImagem1);
     }
 }

@@ -21,7 +21,7 @@
         android:textSize="16sp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnImagem1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/ic_baseline_edit_24" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnImagem2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
