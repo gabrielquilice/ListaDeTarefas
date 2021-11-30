@@ -45,12 +45,11 @@ public class TarefasAdapter extends RecyclerView.Adapter<TarefasHolder> {
         Tarefa tarefa = listaTarefas.get(position);
 
         try {
-            //Se a tarefa já foi concluída, muda a cor de fundo e a imagem do botão
+            //Se a tarefa já foi concluída, muda a imagem do botão
             if(tarefa.getFgFinalizada().equals("S")) {
                 holder.btnEditar.setImageResource(R.drawable.ic_baseline_done_outline_24);
                 holder.btnEditar.setEnabled(false);
                 holder.btnApagar.setVisibility(View.GONE);
-                holder.itemView.setBackgroundColor(context.getResources().getColor(R.color.fg_finalizada));
             }
 
             //Ao clicar na tarefa, vamos abrir uma caixa de diálogo
